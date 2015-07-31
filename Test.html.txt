@@ -1,0 +1,12 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Registration</title>
+	</head>
+	<style>
+	</style>
+	<body style="">
+		<h1>Rana</h1>
+			
+	</body>
+</html>
