@@ -1,0 +1,32 @@
+Core features:
+--------------
+-simple student account(step 1)
+-registration subject suggestion(step 2)
+
+
+simple student account:
+features:
+01. register
+02. view profile
+03. admin can see all student list
+04. admin can delete or add any student
+
+registration subject suggestion:
+01. students can select subjects from available list
+02. from their selected the routines will be listed
+03. the best possible routine will be shown in the first place
+
+
+
+Proposed pages:
+---------------
+01. Registration page
+02. Login page
+03. Admin page
+04. Subject selection page
+
+
+Proposed database tables:
+-------------------------
+01. students
+02. subjects
