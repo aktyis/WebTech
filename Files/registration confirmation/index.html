@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Page</title>
+<link href="css/baseCss.css" rel="stylesheet" />
+</head>
+<body>
+
+<form name="registration" id="reg_form">
+  <label>First Name</label><input type='text' name='fname'/>
+  <label>Lirst Name</label><input type='text' name='lname'/>
+  <label>Address</label><input type='text' name='address'/>
+  <input type='submit' value = "Register" onclick="simple();"/>
+</form>
+
+<div id="text_result">
+</div>
+<div id="canvas_result">
+</div>
+
+<script src="js/html2canvas.js"></script>
+<script>
+
+function simple()
+{
+var allChild = document.getElementsByTagName('form')[0].childNodes;
+//window.alert(allChild.length);
+    var i;
+    var txt = "";
+    for (i = 0; i < allChild.length; i++) {
+        txt += "<p>"+allChild[i].nodeName +":"+allChild[i].value +"</p>" ;
+    }
+     // Create a text node
+  document.getElementById("text_result").innerHTML = txt;
+  canvasIt(document.getElementById("canvas_result"));
+  event.preventDefault();
+}
+
+function canvasIt(loc)
+{
+    html2canvas(document.getElementById('text_result')).then(function(canvas) {
+        loc.appendChild(canvas);
+
+      //  document.getElementsByTagName('canvas')[0].toDataURL('image/png');
+    });
+}
+
+
+</script>
+
+</body>
+</html>

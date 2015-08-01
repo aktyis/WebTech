@@ -1,0 +1,21 @@
+body{
+  padding: 0px;
+  margin: 0px;
+}
+
+#reg_form{
+  margin:auto;
+
+}
+
+#text_result{
+
+  float:left;
+
+}
+
+#canvas_result{
+
+  float:right;
+
+}
