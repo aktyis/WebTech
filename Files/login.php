@@ -90,7 +90,7 @@
 					<a id="relink" href="mainHome.html">Research</a>
 					<a id="allink" href="mainHome.html">Alumni</a>
 					<a id="colink" href="mainHome.html">Contact</a>
-					<input style="width: 180px; height:20px; margin-left: 10em;" type="text" name="p" placeholder="Search Google">
+					<input style="width: 180px; height:20px; margin-left: 10em;" type="text" name="p" required placeholder="Search Google">
 					<input style="width: 60px; height:28px; margin-left: -0.3em;" type="submit" value="Search">
 					</form>
 				</div><br><br>
@@ -106,9 +106,9 @@
 					<div style="margin-left: 2em;>
 						<p id="p2"><br>
 							<label style="font-weight:bold">User Name:</label><br><br>
-							<input style="width:200px; height:25px" type="text" name="username"><br><br>
+							<input style="width:200px; height:25px" type="text" name="username" required><br><br>
 							<label style="font-weight:bold">Password:</label><br><br>
-							<input style="width:200px; height:25px" type="password" name="password"><br><br>
+							<input style="width:200px; height:25px" type="password" name="password" required><br><br>
 						</p>
 						<input style="color:blue; height:30px; font-weight:bold" type="submit" value="Sign In">
 					</div>
