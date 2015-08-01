@@ -49,3 +49,12 @@ server is http://54.249.141.255:1127/post
 maximum 128 reports/day
 reporter is atom-shell-crash-service
 [7240:1472:0801/231413:ERROR:crash_service.cc(290)] could not start dumper
+[7124:2064:0802/000144:VERBOSE1:crash_service_main.cc(68)] Session start. cmdline is [--reporter-url=http://54.249.141.255:1127/post --application-name=Atom --v=1]
+[7124:2064:0802/000144:VERBOSE1:crash_service.cc(133)] window handle is 000B0778
+[7124:2064:0802/000144:VERBOSE1:crash_service.cc(279)] pipe name is \\.\pipe\Atom Crash Service
+dumps at 
+[7124:2064:0802/000144:VERBOSE1:crash_service.cc(283)] checkpoint is crash_checkpoint.txt
+server is http://54.249.141.255:1127/post
+maximum 128 reports/day
+reporter is atom-shell-crash-service
+[7124:2064:0802/000144:ERROR:crash_service.cc(290)] could not start dumper

@@ -10,7 +10,7 @@
   <label>First Name</label><input type='text' name='fname'/>
   <label>Lirst Name</label><input type='text' name='lname'/>
   <label>Address</label><input type='text' name='address'/>
-  <input type='submit' value = "Register" onclick="simple();"/>
+  <input type='submit' value = "Register" onclick="simple(event);"/>
 </form>
 
 <div id="text_result">
@@ -21,7 +21,7 @@
 <script src="js/html2canvas.js"></script>
 <script>
 
-function simple()
+function simple(e)
 {
 var allChild = document.getElementsByTagName('form')[0].childNodes;
 //window.alert(allChild.length);
@@ -33,7 +33,7 @@ var allChild = document.getElementsByTagName('form')[0].childNodes;
      // Create a text node
   document.getElementById("text_result").innerHTML = txt;
   canvasIt(document.getElementById("canvas_result"));
-  event.preventDefault();
+  e.preventDefault();
 }
 
 function canvasIt(loc)
