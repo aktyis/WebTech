@@ -43,6 +43,10 @@
 		{
 			margin-left: 2em;
 		}
+		#aclink
+		{
+			color: rgb(100,280,550);
+		}
 		a:link 
 		{
 			color: rgb(200,200,220);
@@ -109,6 +113,7 @@
 							<input style="width:200px; height:25px" type="text" name="username" required><br><br>
 							<label style="font-weight:bold">Password:</label><br><br>
 							<input style="width:200px; height:25px" type="password" name="password" required><br><br>
+							<a id="aclink" href="login.php">Forgot Password?</a>
 						</p>
 						<input style="color:blue; height:30px; font-weight:bold" type="submit" value="Sign In">
 					</div>
