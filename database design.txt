@@ -14,3 +14,9 @@ faculties(user_id,name,qulification,contact_no,email,specility,image)
 library(book_id,name,author,arrival_date,issue_id)
 
 issue_list(issue_id,user_id,borrow_date,return_date)
+
+
+laterwork
+.........
+faculty wise section
+payment
