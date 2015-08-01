@@ -3,6 +3,6 @@
 
 students(_student_id,first_name,last_name,contact_number,current_address,permanent_address,guardians_name)
 
-courses(_course_id,name,is_open,total_capacity,filled_number,duration,start_time,end_time,day,room)
+courses(_course_id,discipline_id,name,is_open,total_capacity,filled_number,duration,start_time,end_time,day,room,sec)
 
 taken_courses(_student_id,_course_id,completion_status,availablity_status)

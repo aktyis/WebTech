@@ -1,0 +1,38 @@
+[4124:7848:0801/211739:VERBOSE1:crash_service_main.cc(68)] Session start. cmdline is [--reporter-url=http://54.249.141.255:1127/post --application-name=Atom --v=1]
+[4124:7848:0801/211739:VERBOSE1:crash_service.cc(133)] window handle is 001307C4
+[4124:7848:0801/211739:VERBOSE1:crash_service.cc(279)] pipe name is \\.\pipe\Atom Crash Service
+dumps at 
+[4124:7848:0801/211739:VERBOSE1:crash_service.cc(283)] checkpoint is crash_checkpoint.txt
+server is http://54.249.141.255:1127/post
+maximum 128 reports/day
+reporter is atom-shell-crash-service
+[4124:7848:0801/211739:ERROR:crash_service.cc(290)] could not start dumper
+[6076:4508:0801/211752:VERBOSE1:crash_service_main.cc(68)] Session start. cmdline is [--reporter-url=http://54.249.141.255:1127/post --application-name=Atom --v=1]
+[6076:4508:0801/211752:VERBOSE1:crash_service.cc(133)] window handle is 000D03BE
+[6076:4508:0801/211752:VERBOSE1:crash_service.cc(279)] pipe name is \\.\pipe\Atom Crash Service
+dumps at 
+[6076:4508:0801/211752:VERBOSE1:crash_service.cc(283)] checkpoint is crash_checkpoint.txt
+server is http://54.249.141.255:1127/post
+maximum 128 reports/day
+reporter is atom-shell-crash-service
+[6076:4508:0801/211752:VERBOSE1:crash_service_main.cc(83)] Ready to process crash requests
+[6076:7860:0801/211752:VERBOSE1:crash_service.cc(313)] client start. pid = 8628
+[6076:7860:0801/211752:VERBOSE1:crash_service.cc(313)] client start. pid = 2240
+[7436:6844:0801/211752:VERBOSE1:crash_service_main.cc(68)] Session start. cmdline is [--reporter-url=http://54.249.141.255:1127/post --application-name=Atom --v=1]
+[7436:6844:0801/211752:VERBOSE1:crash_service.cc(133)] window handle is 000703EA
+[7436:6844:0801/211752:VERBOSE1:crash_service.cc(279)] pipe name is \\.\pipe\Atom Crash Service
+dumps at 
+[7436:6844:0801/211752:VERBOSE1:crash_service.cc(283)] checkpoint is crash_checkpoint.txt
+server is http://54.249.141.255:1127/post
+maximum 128 reports/day
+reporter is atom-shell-crash-service
+[7436:6844:0801/211752:ERROR:crash_service.cc(290)] could not start dumper
+[6076:8096:0801/211928:VERBOSE1:crash_service.cc(321)] client end. pid = 2240
+[6076:8096:0801/211929:VERBOSE1:crash_service.cc(321)] client end. pid = 8628
+[6076:8096:0801/211930:VERBOSE1:crash_service.cc(342)] zero clients. exiting
+[6076:4508:0801/211930:VERBOSE1:crash_service.cc(480)] session ending..
+[6076:4508:0801/211930:VERBOSE1:crash_service.cc(485)] clients connected :2
+clients terminated :2
+dumps serviced :0
+dumps reported :0
+[6076:4508:0801/211930:VERBOSE1:crash_service_main.cc(88)] Session end. return code is 0
