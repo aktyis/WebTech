@@ -10,3 +10,7 @@ courses(_course_id,discipline_id,name,is_open,total_capacity,filled_number,durat
 taken_courses(user_id,_course_id,completion_status,availablity_status,semester,date,cpga)
 
 faculties(user_id,name,qulification,contact_no,email,specility,image)
+
+library(book_id,name,author,arrival_date,issue_id)
+
+issue_list(issue_id,user_id,borrow_date,return_date)
