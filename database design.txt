@@ -1,0 +1,8 @@
+**the primary keys are _(dash)ed in the front like _id. But user_name is not a primary key
+
+
+students(_student_id,first_name,last_name,contact_number,current_address,permanent_address,guardians_name)
+
+courses(_course_id,name,is_open,total_capacity,filled_number,duration,start_time,end_time,day,room)
+
+taken_courses(_student_id,_course_id,completion_status,availablity_status)
