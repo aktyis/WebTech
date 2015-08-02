@@ -1,0 +1,129 @@
+
+body 
+{
+	background-color: rgb(200,200,220);
+}
+.div2
+{
+	width:1100px;
+	height:220px; 
+	border:1px;
+}
+.div3
+{
+	width:1100px;
+	height:55px;
+	background-color:black;
+}
+.div4
+{
+	width:1100px;
+	height:150px;
+	background-color:gray;
+}
+.searchText
+{
+	width: 180px; 
+	height:20px; 
+	margin-left: 10em;
+}
+.searchBut
+{
+	width: 60px; 
+	height:28px; 
+	margin-left: -0.3em;
+}
+.alink
+{
+	margin-left: 2em;
+}
+#hlink
+{
+	font-weight:bold; 
+	font-size:20px;
+}
+#imlink
+{
+	width:180px;
+	height:120px;
+}
+#nalink
+{
+	margin-left: 0em;
+	color: rgb(100,150,550);
+	font-weight:bold; 
+	font-size:30px;
+}
+#lolink
+{
+	color: rgb(100,280,550);
+	margin-left: 12em;
+	font-weight:bold; 
+	font-size:25px;
+}
+.alink:link 
+{
+	color: rgb(200,200,220);
+	background-color: transparent;
+	text-decoration: none;
+}
+.alink:visited 
+{
+	color: rgb(200,200,220);
+	background-color: transparent;
+	text-decoration: none;
+}
+.alink:hover 
+{
+	color: rgb(100,280,550);
+	background-color: transparent;
+	text-decoration: underline;
+}
+#nalink:hover 
+{
+	color: rgb(100,150,550);
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.loginlabel
+{
+	color:green;
+}
+.div6
+{
+	width:400px;
+	height:280px;
+	border:1px;
+	background-color: rgb(100,130,150);
+}
+.div7
+{
+	margin-left: 2em;
+}
+.llabel
+{
+	font-weight:bold;
+}
+.ltext
+{
+	width:200px;
+	height:25px;
+}
+#fplink
+{
+	margin-left: 0em;
+	color: rgb(100,280,550);
+} 
+.signBut
+{
+	color:blue; 
+	height:30px; 
+	font-weight:bold;
+}
+
+
+
+
+
+
