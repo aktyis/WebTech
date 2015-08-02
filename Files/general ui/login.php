@@ -33,7 +33,7 @@
 							<div class="div7">
 								<p clas="loginpara"><br>
 									<label class="llabel" >User Name:</label><br><br>
-									<input class="ltext" type="text" name="username" required><br><br>
+									<input class="ltext" type="text" name="username" autofocus required ><br><br>
 									<label class="llabel" >Password:</label><br><br>
 									<input class="ltext" type="password" name="password" required><br><br>
 									<a class="alink" id="fplink" href="login.php">Forgot Password?</a>
