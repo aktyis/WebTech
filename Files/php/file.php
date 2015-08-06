@@ -12,7 +12,7 @@ $log_password = "";
 
 function evalLoggedUser($conx,$u,$p)
 {
-	$sql = "SELECT ip FROM users WHERE username='$u'AND password='$p';
+	$sql = "SELECT * FROM users WHERE username='$u'AND password='$p';
     $query = mysqli_query($conx, $sql);
     $numrows = mysqli_num_rows($query);
 	if($numrows > 0)
@@ -28,7 +28,7 @@ if( (isset($_SESSION["user"]) && (isset( $_SESSION["pass"]))
 	// Verify the user
 	$user_ok = evalLoggedUser($db_conx,$log_username,$log_password);
 }
-else if ( (isset($_COOKIE["user"]) && (isset($_COOKIE["pass"]) )
+else if ( (isset($_COOKIE["user"])) && (isset($_COOKIE["pass"]) ) )
 {
     $_SESSION['user'] = preg_replace('#[^a-z0-9]#i', '', $_COOKIE['user']);
     $_SESSION['pass'] = preg_replace('#[^a-z0-9]#i', '', $_COOKIE['pass']);
@@ -50,8 +50,6 @@ if($user_ok == true)
 	header("location: user.php?u=".$_SESSION["user"]); // redirect to appropieat user
     exit();
 }
-
-
 
 
 if(isset($_POST["username"]))
@@ -97,4 +95,5 @@ if(isset($_POST["username"]))
 	}
 	exit();
 }
+
 ?>
