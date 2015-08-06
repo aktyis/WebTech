@@ -1,0 +1,45 @@
+.f1 
+{
+
+  font-color:white;
+  font-size:15px;
+  padding:5px;
+  height:300px;
+  line-height:1.8;
+}
+.f2
+{
+height:150px;
+}
+.1l
+{ 
+font-family: "Times New Roman";
+font-size: 20px;
+}
+.table1
+{
+border-left: 2px solid black;
+height: 100%;
+}
+.th1
+{
+border: 1px solid black;
+}
+.td1
+{
+border: 1px solid black;
+}
+.tr1
+{
+border: 1px solid black;
+}
+#regbutton
+{
+	vertical-align:top;
+	text-align:center;
+}
+.academicOptions
+{
+	vertical-align:top;
+	text-align:center;
+}
