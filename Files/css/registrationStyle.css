@@ -1,0 +1,29 @@
+
+body
+{
+	background-color: rgb(200,200,220);
+	
+}
+.div2
+{
+	width:500px;
+	height:700px;
+	border:1px solid blue; 
+	background-color: rgb(100,130,150);
+}
+.fieldset1
+{
+	display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove (internal value);
+}
+#p1
+{
+	margin-left: 2em;
+	
+}
