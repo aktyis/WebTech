@@ -22,14 +22,15 @@
 					</form>
 				</div><br><br>
 				<div align="left" class="div4"><br>
-					<a class="alink" href="mainHome.html"><img id="imlink" src="images/univLogo.png" alt="University" title="Engineering University of Bangladesh"></a>
+					<a class="alink" href="mainHome.html"><img id="imlink" src="../images/univLogo.png" alt="University" title="Engineering University of Bangladesh"></a>
 					<a class="alink" id="nalink" href="mainHome.html">Engineering University of Bangladesh</a>
 				</div>
 				
 				<div align="right" class="div5"><br><br>
-					<label class="loginlabel">Sign In with your username & password</label><br>
+					
 					<form action="ConfirmLogin.php" method="post">
-						<div align="left" class="div6">
+						<div align="left" class="div6"><br>
+						<label class="loginlabel">Sign In with your username & password</label><br>
 							<div class="div7">
 								<p clas="loginpara"><br>
 									<label class="llabel" >User Name:</label><br><br>
