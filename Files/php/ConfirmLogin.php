@@ -30,10 +30,10 @@
     }
 
     // else if username and password were submitted, grab them instead
-    else if (isset($_POST["user"]) && isset($_POST["pass"]))
+    else if (isset($_POST["username"]) && isset($_POST["password"]))
     {
         // if username and password are valid, log user in
-        if ($_POST["user"] == USER && $_POST["pass"] == PASS)
+        if ($_POST["username"] == USER && $_POST["password"] == PASS)
         {
             // remember that user's logged in
             $_SESSION["authenticated"] = true;
@@ -54,41 +54,3 @@
         }
     }
 ?>
-
-<!DOCTYPE html>
-
-<html>
-  <head>
-    <title>Log In</title>
-  </head>
-  <body>
-    <form action="<?php echo $_SERVER["PHP_SELF"] ?>" method="post">
-      <table>
-        <tr>
-          <td>Username:</td>
-          <td>
-            <?php if (isset($_POST["user"])): ?>
-              <input name="user" type="text" value="<?= htmlspecialchars($_POST["user"]) ?>">
-            <?php elseif (isset($_COOKIE["user"])): ?>
-              <input name="user" type="text" value="<?= htmlspecialchars($_COOKIE["user"]) ?>">
-            <?php else: ?>
-              <input name="user" type="text" value="">
-            <?php endif ?>
-          </td>
-        </tr>
-        <tr>
-          <td>Password:</td>
-          <td><input name="pass" type="password"></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td><input name="keep" type="checkbox"> &nbsp; keep me logged in until I click <b>log out</b></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td><input type="submit" value="Log In"></td>
-        </tr>
-      </table>      
-    </form>
-  </body>
-</html>
