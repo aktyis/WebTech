@@ -3,17 +3,17 @@
 
 users(_user_id,password,status,validity)
 
-students(user_id,first_name,last_name,contact_number,email,blood_group,current_address,gender,permanent_address,guardians_name,image)
+students(user_id,first_name,last_name,contact_number,email,blood_group,current_address,gender,guardians_name,guardians_contact)
 
-courses(_course_id,discipline_id,name,is_open,total_capacity,filled_number,duration,start_time,end_time,day,room,sec,user_id)
+courses(_course_id,class_id,discipline_name,course_name,is_open,total_capacity,filled_number,duration,start_time,end_time,day,room,sec)
 
 taken_courses(user_id,_course_id,completion_status,availablity_status,semester,date,cpga)
 
-faculties(user_id,name,qulification,contact_no,email,specility,image)
+faculties(user_id,name,qulification,contact_no,email,specility)
 
-library(book_id,name,author,arrival_date,issue_id)
+library(book_id,book_name,author,arrival_date,issue_status)
 
-issue_list(issue_id,user_id,borrow_date,return_date)
+issue_list(issue_id,user_id,book_id,borrow_date,return_date)
 
 
 laterwork
