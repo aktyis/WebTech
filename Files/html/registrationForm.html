@@ -2,36 +2,64 @@
 <html>
 	<head>
 		<title>Registration</title>
-		<link rel="stylesheet" href="../css/registraionStyle.css">
+		<link rel="stylesheet" href="../css/registrationStyle.css">
 	</head>
 	<body>
-		<div align="center">
+        <div align="center">
+		<div align="center" class="div1">
 			<form action="ConfirmReg.php" method="post"><br>
-			<fieldset class="fieldset1">
-			<legend>Personal Information </legend>
-				<div align="left"  class="div2">
-					<p id="p1">
-						<label style="font-weight:bold">First Name:</label><br>
-						<input style="width:250px; height:25px;" type="text" name="firstname"><br><br>
-						<label style="font-weight:bold">Last Name:</label><br>
-						<input style="width:250px; height:25px;" type="text" name="lastname"><br><br>
-						<label style="font-weight:bold">Gender:</label><br><br>
-							<input style="" type="radio" name="gender" value="Male">Male <input type="radio" name="gender" value="Female"> Female <br><br>
-						<label style="font-weight:bold">Nationality:</label><br>
-						<input style="width:250px; height:25px;" type="text" name="nationality"><br><br>
-						<label style="font-weight:bold">Email:</label><br>
-						<input style="width:250px; height:25px;" type="text" name="email"><br><br>
-						<label style="font-weight:bold">Mobile No:</label><br>
-						<input style="width:250px; height:25px;" type="text" name="mobile"><br><br>
-						<label style="font-weight:bold">Choose your User Name:</label><br>
-						<input style="width:250px; height:25px;" type="text" name="username"><br><br>
-						<label style="font-weight:bold">Create a Password:</label><br>
-						<input style="width:250px; height:25px;" type="password" name="password"><br><br>
-					</p>
-				</div><br>
-				<input style="color:blue; height:30px; font-weight:bold" type="submit" value="Register"><br><br>
-				</fieldset>
-			</form>
-		</div>	
+                <table>
+                    <tr>
+                        <td>
+                            <fieldset class="fieldset1">
+                                <legend class="rflegend">Personal Information</legend>
+                                <div align="left"  class="div2">
+                                    <p class="p1">
+                                        <label class="p1label" id="">Full Name:</label><br>
+                                        <input class="p1text" id="" type="text" name="name" required autofocus><br><br>
+                                        <label class="p1label" id="">Gender:</label><br><br>
+                                            <input class="p1label" id="" type="radio" name="gender" value="Male">Male <input type="radio" name="gender" value="Female"> Female <br><br>
+                                        <label class="p1label" id="">Blood Group:</label><br>
+                                        <input class="p1text" id=""type="text" name="bloodGroup" required><br><br>
+                                        <label class="p1label" id="">Nationality:</label><br>
+                                        <input class="p1text" id=""type="text" name="nationality" required><br><br>
+                                        <label class="p1label" id="">Present Address:</label><br>
+                                        <textarea class="p1text" id="addressArea" name="presentAddress" required></textarea><br><br>
+                                        <label class="p1label" id="">Email:</label><br>
+                                        <input class="p1text" id=""type="text" name="email" required><br><br>
+                                        <label class="p1label" id="">Mobile No:</label><br>
+                                        <input class="p1text" id=""type="text" name="mobile" required><br><br>
+                                        <label class="p1label" id="">User Name:</label><br>
+                                        <input class="p1text" id=""type="text" name="username" required><br><br>
+                                        <label class="p1label" id="">Create a Password:</label><br>
+                                        <input class="p1text" id=""type="password" name="password" required><br><br>
+                                    </p>
+                                </div><br>
+                            </fieldset>
+                        </td>
+                        <td class="gurdianCol">
+                            <fieldset class="fieldset2">
+                                <legend class="rflegend">Guardian Information</legend>
+                                <div align="left"  class="div2">
+                                    <p class="p2">
+                                        <label class="p1label" id="">Full Name:</label><br>
+                                        <input class="p1text" id="" type="text" name="name" required autofocus><br><br>
+                                        <label class="p1label" id="">Mobile No:</label><br>
+                                        <input class="p1text" id=""type="text" name="mobile" required><br><br>
+                                        <label class="p1label" id="">Present Address:</label><br>
+                                        <textarea class="p1text" id="addressArea" name="presentAddress" required></textarea><br><br>
+                                    </p>
+                                </div><br>
+                            </fieldset>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input class="fsubmit" type="submit" value="Register"><br><br></td>
+                    </tr>
+                </table>
+                    
+            </form>
+		</div>
+        </div>
 	</body>
 </html>

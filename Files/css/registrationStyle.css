@@ -4,26 +4,53 @@ body
 	background-color: rgb(200,200,220);
 	
 }
-.div2
-{
-	width:500px;
-	height:700px;
-	border:1px solid blue; 
-	background-color: rgb(100,130,150);
-}
+
 .fieldset1
 {
-	display: block;
-    margin-left: 2px;
-    margin-right: 2px;
-    padding-top: 0.35em;
-    padding-bottom: 0.625em;
-    padding-left: 0.75em;
-    padding-right: 0.75em;
-    border: 2px groove (internal value);
+    width:500px;
+	height:740px;
+    border: solid 1px rgb(163, 205, 234);
+    background-color:rgb(141, 184, 212);
 }
-#p1
+.fieldset2
+{
+    width:500px;
+	height:380px;
+    border: solid 1px rgb(163, 205, 234);
+    background-color:rgb(141, 184, 212);
+}
+.rflegend
+{
+    font-weight:bold;
+    font-size:25px;
+    color:#151df8;
+}
+.gurdianCol
+{
+    vertical-align: top;
+}
+.p1label
 {
 	margin-left: 2em;
+    font-weight:bold;
 	
+}
+.p1text
+{
+    margin-left: 2em;
+    width:250px; 
+    height:25px;
+}
+#addressArea
+{
+    width: 250px;
+    height: 75px;
+}
+.fsubmit
+{
+    color:#ff003b;
+    height:40px; 
+    width: 200px;
+    font-size:20px;
+    font-weight:bold;
 }
