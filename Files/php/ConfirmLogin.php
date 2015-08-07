@@ -2,6 +2,11 @@
 require './dbconnect.php';
 require './check.php';
 
+
+$host  = $_SERVER['HTTP_HOST'];
+$uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\'); // getting current location
+
+
 session_start();
 
 $user_ok = false;
@@ -50,6 +55,7 @@ if(isset($_POST["username"]))
 	// FORM DATA ERROR HANDLING
 	if($username == "" || $password == "")
     {
+        header("location: http://$host$uri/../html/failedloginForm.html" ); 
         echo "login_failed";
         exit();
 	} 
@@ -70,6 +76,8 @@ if(isset($_POST["username"]))
 		if($password != $db_pass_str)
         {
 			echo "login_failed";
+            header("location: http://$host$uri/../html/failedloginForm.html" ); 
+            
             exit();
 		}
         else 
@@ -87,8 +95,10 @@ if(isset($_POST["username"]))
                 print("<high>{$status}</high>");
             print("</users>");
 
+           
             
 			echo $db_username;
+            header("location: http://$host$uri/../html/studentHomePage.html" ); 
 		    exit();
         }
 	}

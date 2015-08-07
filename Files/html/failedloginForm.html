@@ -4,6 +4,7 @@
         
 		<title>Login</title>
 		<link rel="stylesheet" href="../css/homeStyle.css">
+		<script> document.form.getElementById("loginfailed").innerHTML = "Sign in information is wrong try again"; </script>
 	</head>
 	<body >
 		<div align="center">
@@ -31,7 +32,7 @@
                     
 					<form action="http://localhost\WebtechFinal\WebTech\Files\php\ConfirmLogin.php" method="POST">
 						<div align="left" class="div6"><br>
-						<label class="loginlabel">Sign In with your username & password</label><br>
+						<p  id="loginfailed" class="loginlabel">Sign In with your username & password</p>
 							<div class="div7">
 								<p clas="loginpara">
 									<label class="llabel" >User Name:</label><br><br>
