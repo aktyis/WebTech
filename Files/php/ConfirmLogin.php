@@ -56,6 +56,8 @@ if(isset($_POST["username"]))
     else 
     {
         $active="active";
+        $status="";
+        
 	   // END FORM DATA ERROR HANDLING
 		$sql = "SELECT * FROM users WHERE user_id='$username' AND validity='$active'";
         
@@ -64,7 +66,7 @@ if(isset($_POST["username"]))
         
 		$db_username = $row[0];
         $db_pass_str = $row[1];
-        
+        $status = $row[2];
 		if($password != $db_pass_str)
         {
 			echo "login_failed";
@@ -79,6 +81,13 @@ if(isset($_POST["username"]))
 			setcookie("user", $db_username,time()+5, "/", "", "", TRUE);
     		setcookie("pass", $db_pass_str,time()+5, "/", "", "", TRUE); 
 			
+       
+            print("<users>");
+                print("<price>{$db_username}</price>");
+                print("<high>{$status}</high>");
+            print("</users>");
+
+            
 			echo $db_username;
 		    exit();
         }
