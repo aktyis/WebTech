@@ -6,7 +6,7 @@ body
 .div2
 {
 	width:1100px;
-	height:220px; 
+	height:70px; 
 	border:1px;
 }
 .div3
@@ -123,8 +123,33 @@ body
 	font-weight:bold;
 }
 
+#adminHomeLogo
+{
+    margin-left: 2em;
+    font-size: 20px;
+    font-weight: bold;
+    color: azure;
+}
 
-
-
+.adlink:link
+{
+    color:#2876d1;
+    font-size: 20px;
+    margin-left: 1em;
+    background-color: transparent;
+	text-decoration: none;
+}
+.adlink:visited 
+{
+	color: #2876d1;
+	background-color: transparent;
+	text-decoration: none;
+}
+.adlink:hover 
+{
+	color: blue;
+	background-color: transparent;
+	text-decoration: underline;
+}
 
 
