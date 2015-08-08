@@ -43,7 +43,7 @@ font-size: 20px;
 }
 .fisrtColoumn
 {	
-	width:250px;
+	width:180px;
 	vertical-align:top;
 	text-align:center;
 }
@@ -57,4 +57,8 @@ font-size: 20px;
 	width:300px;
 	vertical-align:top;
 	text-align:center;
+}
+.semesterSelectTag
+{
+
 }

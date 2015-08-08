@@ -2,18 +2,36 @@
 <html>
 <head>
 	<link rel="stylesheet" href="../css/studentHomePage.css">
+	<script>
+	var myDiv = document.getElementById("semesterSelectTag");
+	
+	var array = ["Volvo","Saab","Mercades","Audi"];
+	
+	var selectList = document.createElement("select");
+	selectList.setAttribute("id", "mySelect");
+	myDiv.appendChild(selectList);
+	
+	for (var i = 0; i < array.length; i++) {
+    var option = document.createElement("option");
+    option.setAttribute("value", array[i]);
+    option.text = array[i];
+    selectList.appendChild(option);
+}
+	</script>
 </head>
 <body class="body-Property">
 <div>
 	<table class="tableFullPage">	
 			<td class="fisrtColoumn">
-				sifath
+				Academics: 
 				<br>
-				ilu
+				<a href="">Course & Result</a> 
 				<br>
-				rana
+				<a href="">Financial</a>
 				<br>
-				nayeem
+				<a href="">library</a>
+				<br>
+				<a href="">Curriculam</a>
 			</td> 
 			<td class="secondColoumn">
 			<div>
@@ -34,6 +52,7 @@
 			<div>
 				<form>
 					<fieldset class="registrationField">
+					<div class="semesterDropDownList" id="semesterSelectTag"></div>
 					<legend class="registrationLegend">Registration</legend>
 					</fieldset>
 				</form>
@@ -42,7 +61,7 @@
 				
 			<td class="thirdColoumn">
 			<input type=submit value="Pre-Registration">
-			</td>
+			</td>	
 	</table>
 </div>
 </body>

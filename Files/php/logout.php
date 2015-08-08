@@ -1,4 +1,4 @@
-<? 
+<?php 
     
     // enable sessions
     session_start();
