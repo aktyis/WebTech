@@ -50,7 +50,7 @@ if(isset($_POST["username"]))
 
 	// GATHER THE POSTED DATA INTO LOCAL VARIABLES AND SANITIZE
 	$username = $_POST['username'];
-	$password = $_POST['password'];//md5($_POST['password']);
+	$password = md5($_POST['password']);
     
 	// FORM DATA ERROR HANDLING
 	if($username == "" || $password == "")
@@ -98,7 +98,12 @@ if(isset($_POST["username"]))
            
             
 			echo $db_username;
-            header("location: http://$host$uri/../html/studentHomePage.html" ); 
+            if($status=="student")
+            {
+                header("location: http://$host$uri/../html/studentHomePage.html" ); 
+            }
+            else
+                header("location: http://$host$uri/../php/AdminHomePage.php" );
 		    exit();
         }
 	}

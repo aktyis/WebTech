@@ -131,21 +131,22 @@ body
     color: azure;
 }
 
-.adlink:link
+.adblink:link
 {
+    
     color:#2876d1;
     font-size: 20px;
     margin-left: 1em;
     background-color: transparent;
 	text-decoration: none;
 }
-.adlink:visited 
+.adblink:visited 
 {
 	color: #2876d1;
 	background-color: transparent;
 	text-decoration: none;
 }
-.adlink:hover 
+.adblink:hover 
 {
 	color: blue;
 	background-color: transparent;

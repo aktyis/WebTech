@@ -1,5 +1,8 @@
 <?php 
     
+    $host  = $_SERVER['HTTP_HOST'];
+    $uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\'); // getting current location
+
     // enable sessions
     session_start();
 
@@ -10,4 +13,7 @@
     // log user out
     setcookie(session_name(), "", time() - 3600);
     session_destroy();
+
+     header("location: http://$host$uri/../html/loginForm.html" );
+    
 ?>
