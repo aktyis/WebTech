@@ -1,4 +1,9 @@
-.f1 
+.body-Property
+{
+
+background-color: #cccccc;
+}
+.fieldsetClassSchedule
 {
 
   font-color:white;
@@ -7,39 +12,49 @@
   height:300px;
   line-height:1.8;
 }
-.f2
+.registrationField
 {
 height:150px;
 }
-.1l
+.tableFullPage
+{
+	width: 100%;
+	height: 100%; 
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+.tableUnderFieldset
+{
+	width: 100%;
+	height: 100%; 
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+.legendClassSchedule
 { 
 font-family: "Times New Roman";
 font-size: 20px;
 }
-.table1
+.thirdColoumn
 {
-border-left: 2px solid black;
-height: 100%;
+	width:250px;
+	vertical-align:top;
+	text-align:center;
 }
-.th1
-{
-border: 1px solid black;
+.fisrtColoumn
+{	
+	width:250px;
+	vertical-align:top;
+	text-align:center;
 }
-.td1
-{
-border: 1px solid black;
-}
-.tr1
-{
-border: 1px solid black;
-}
-#regbutton
+.secondColoumn
 {
 	vertical-align:top;
 	text-align:center;
 }
-.academicOptions
+.DayColoum
 {
+	width:300px;
 	vertical-align:top;
 	text-align:center;
 }
