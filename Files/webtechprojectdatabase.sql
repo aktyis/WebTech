@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 06, 2015 at 11:59 AM
+-- Generation Time: Aug 09, 2015 at 07:57 PM
 -- Server version: 5.6.21
 -- PHP Version: 5.6.3
 
@@ -57,6 +57,13 @@ CREATE TABLE IF NOT EXISTS `faculties` (
   `specility` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `faculties`
+--
+
+INSERT INTO `faculties` (`user_id`, `name`, `qulification`, `contact_no`, `email`, `specility`) VALUES
+('1111-111-11', 'Nabil Sarwar', 'Software Engineering', 124568956, 'nabil@aiub.edu', 'abc');
+
 -- --------------------------------------------------------
 
 --
@@ -103,6 +110,17 @@ CREATE TABLE IF NOT EXISTS `students` (
   `gurdians_contact` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `students`
+--
+
+INSERT INTO `students` (`user_id`, `name`, `cantact_no`, `email`, `blood_group`, `current_address`, `gender`, `gurdian_name`, `gurdians_contact`) VALUES
+('1111-111-11', '', '', '', '', '', '', '', 1111),
+('13-23456-1', 'nayre', '012568', 'nay@gnah.con', 'B pos', 'dhaka', 'Male', 'nayu', 13),
+('13-23669-1', '', '', '', '', '', '', '', 13),
+('13-23669-1', 'Nayeem Islam', '01245863685', 'nirob@aiub.edu', 'B pos', 'Dhaka', 'Male', 'Md Islam', 13),
+('14-23869-1', 'Nirob Islam', '01245863685', 'nirob@aiub.edu', 'B pos', 'Dhaka', 'Male', 'Md Islam Al', 14);
+
 -- --------------------------------------------------------
 
 --
@@ -127,9 +145,19 @@ CREATE TABLE IF NOT EXISTS `taken_courses` (
 CREATE TABLE IF NOT EXISTS `users` (
   `user_id` varchar(11) NOT NULL,
   `password` varchar(50) NOT NULL,
-  `status` varchar(50) NOT NULL,
-  `validity` varchar(50) NOT NULL
+  `status` varchar(50) DEFAULT NULL,
+  `validity` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`user_id`, `password`, `status`, `validity`) VALUES
+('1111-111-11', 'e10adc3949ba59abbe56e057f20f883e', 'faculty', 'active'),
+('13-23456-1', 'e10adc3949ba59abbe56e057f20f883e', 'student', 'active'),
+('13-23669-1', 'e10adc3949ba59abbe56e057f20f883e', 'student', 'active'),
+('14-23869-1', 'e10adc3949ba59abbe56e057f20f883e', 'student', 'active');
 
 --
 -- Indexes for dumped tables
@@ -140,6 +168,12 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 ALTER TABLE `courses`
  ADD UNIQUE KEY `course_id` (`course_id`);
+
+--
+-- Indexes for table `faculties`
+--
+ALTER TABLE `faculties`
+ ADD UNIQUE KEY `user_id` (`user_id`);
 
 --
 -- Indexes for table `issue_list`
