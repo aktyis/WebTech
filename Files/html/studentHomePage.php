@@ -135,16 +135,14 @@ $db_connect = mysqli_connect("localhost" , "root" , "" ,"webtechprojectdatabase"
 </div>
 <div id="section">
 	<div class="semesterDropDownList" id="semesterSelectTag"></div>
-<h2>London</h2>
+<h2></h2>
 <p>
 <input type=submit onclick="ajaxFunction()" value="showroutine" ">
 <div class="ajaxDiv" id="ajaxDiv"></div>
-London is the capital city of England. It is the most populous city in the United Kingdom,
-with a metropolitan area of over 13 million inhabitants.
+
 </p>
 <p>
-Standing on the River Thames, London has been a major settlement for two millennia,
-its history going back to its founding by the Romans, who named it Londinium.
+
 </p>
 </div>
 
