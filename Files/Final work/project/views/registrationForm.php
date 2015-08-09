@@ -7,7 +7,7 @@
 	<body>
         <div align="center">
 		<div align="center" class="div1">
-			<form action="http://ConfirmRegistration.php" method="post">                   <br>
+			<form action="views/ConfirmRegistration.php" method="post">                   <br>
                 <table>
                     <tr>
                         <td>
