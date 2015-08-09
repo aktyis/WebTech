@@ -37,14 +37,7 @@
                         
                     </td>
                     <td style="width:700px; border:1px solid green; vertical-align: top; text-align: left; margin-left: 2em;">
-                        <label id="academic">Academic</label><br>
-                        <a class="adblink" id="calink" href="">Courses</a><br><br>
-                        <a class="adblink" id="cstlink" href="">Class Schedule</a><br><br>
-                        <a class="adblink" id="relink" href="">Registration</a><br><br>
-                        <label id="academic">Library</label><br>
-                        <a class="adblink" id="calink" href="">Courses</a><br><br>
-                        <a class="adblink" id="cstlink" href="">Class Schedule</a><br><br>
-                        <a class="adblink" id="relink" href="">Registration</a><br><br>
+                        <label id="academic">Routine</label><br>
                     </td>
                     <td style="width:200px; border:1px; vertical-align: top; text-align: center;">
                         <label id="academic"></label>
