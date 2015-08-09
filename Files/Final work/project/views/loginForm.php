@@ -30,7 +30,7 @@
 
 				<div align="right" class="div5"><br><br>
 
-					<form action="views/confirmlogin.php" method="POST">
+					<form action="views/confirmlogin.php" method="POST" name="signIn">
 						<div align="left" class="div6"><br>
 						<label class="loginlabel">Sign In with your username & password</label><br>
 							<div class="div7">
@@ -41,7 +41,7 @@
 									<input class="ltext" type="password" name="password" required><br><br>
 									<a class="alink" id="fplink" href="../js/forgetPass.js">Forgot Password?</a>
 								</p>
-								<input class="signBut" type="submit" value="Sign In">
+								<input class="signBut" type="submit" value="Sign In" onsubmit="formValidate.validateField('signIn')">
 							</div>
 						</div><br>
 					</form>
