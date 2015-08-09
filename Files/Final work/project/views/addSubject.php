@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>Registration</title>
-		<link rel="stylesheet" href="views/css/addSubjectStyle.css">
+		<link rel="stylesheet" href="css/addSubjectStyle.css">
 	</head>
 	<body>
         <div align="center">
