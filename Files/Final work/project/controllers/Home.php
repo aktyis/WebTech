@@ -10,9 +10,9 @@ class Home
     require '/../views/home_view.php';
   }
 
-  public function showAll()
+  public function loginForm()
   {
-    echo 'we are all here';
+    require '/../views/loginForm.php';
   }
 
   public function show($data)

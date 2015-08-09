@@ -1,7 +1,7 @@
 <?php
 define('DB_TYPE', 'mysql');
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'tutorial_site');
+define('DB_NAME', '');
 define('DB_USER', 'root');
 define('DB_PASS', '');
 
@@ -38,9 +38,11 @@ class Database {
    {
 		$sql = "INSERT INTO ".$table." (".$column.") VALUES (".$value.") ";
 
-		if ($this->conn->query($sql) === TRUE) {
+		if ($this->conn->query($sql) === TRUE) 
+		{
 		    return true;
-		} else {
+		} else 
+		{
 		    return false;
 		}
    }
@@ -61,9 +63,11 @@ class Database {
    {
    		$sql = "DELETE FROM $table WHERE $field = $where";
 
-		if ($this->conn->query($sql) === TRUE) {
+		if ($this->conn->query($sql) === TRUE) 
+		{
 		    return true;
-		} else {
+		} else 
+		{
 		    return false;
 		}
    }
