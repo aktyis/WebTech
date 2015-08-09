@@ -76,11 +76,57 @@ $db_connect = mysqli_connect("localhost" , "root" , "" ,"webtechprojectdatabase"
 </div>
 </div>
 
+<script>
+	function ajaxFunction()
+	{
+		 var ajaxRequest;  // The variable that makes Ajax possible!
+		 try
+		 {
+		    ajaxRequest = new XMLHttpRequest();
+		 }
+		 catch (e)
+		 {
+		   try
+		   {
+			  ajaxRequest = new ActiveXObject("Msxml2.XMLHTTP");
+		   }
+		   catch (e) 
+		   {
+			  try
+			  {
+				 ajaxRequest = new ActiveXObject("Microsoft.XMLHTTP");
+			  }
+			  catch (e)
+			  {
+				 alert("Your browser broke!");
+				 return false;
+			  }
+		   }
+		 }
+		 ajaxRequest.onreadystatechange = function()
+		 {
+		   if(ajaxRequest.readyState == 4)
+		   {
+			  var ajaxDisplay = document.getElementById('ajaxDiv');
+			  ajaxDisplay.innerHTML = ajaxRequest.responseText;
+			}
+		 }
+		 // Now get the value from user and pass it to
+		 // server script.
+		 var id = "13-23471-1";
+		 var queryString = "?id=" + id ;
+		 ajaxRequest.open("POST", "ajax-example.php"+queryString, true);
+		 ajaxRequest.send(null); 
+}
+</script>
+
 <div id="nav">
 <a class="rightlink" href=""><b>Courses & Results</b></a><br>
 <a class="rightlink" href=""><b>Profile</a></b><br>
 <a class="rightlink" href=""><b>Library</a></b><br>
 <a class="rightlink" href=""><b>Financials</a></b><br>
+
+
 </div>
 <br>
 <div id="regButton">
@@ -91,6 +137,8 @@ $db_connect = mysqli_connect("localhost" , "root" , "" ,"webtechprojectdatabase"
 	<div class="semesterDropDownList" id="semesterSelectTag"></div>
 <h2>London</h2>
 <p>
+<input type=submit onclick="ajaxFunction()" value="showroutine" ">
+<div class="ajaxDiv" id="ajaxDiv"></div>
 London is the capital city of England. It is the most populous city in the United Kingdom,
 with a metropolitan area of over 13 million inhabitants.
 </p>
@@ -104,32 +152,35 @@ its history going back to its founding by the Romans, who named it Londinium.
 Copyright © We Are Devolopers
 </div>
 	<script>
-	var myDiv = document.getElementById("semesterSelectTag");
-	<? php
-	$db_connect = mysqli_connect("localhost" , "root" , "" ,"webtechprojectdatabase");
-	$get_id="13-23471-1";
-	$sql= "SELECT * FROM students WHERE user_id='$get_id' ";
-	$result = $db_connect->query($sql);
+	
+	
+	
+		var myDiv = document.getElementById("semesterSelectTag");
+		<? php
+		$db_connect = mysqli_connect("localhost" , "root" , "" ,"webtechprojectdatabase");
+		$get_id="13-23471-1";
+		$sql= "SELECT * FROM students WHERE user_id='$get_id' ";
+		$result = $db_connect->query($sql);
 
-	if ($result->num_rows > 0) {
-    while($row = $result->fetch_assoc()) {
-        $sSemester = $row["semester"];
-		echo "<h3>$sName</h3>";
-    }
-	}
-	$db_connect->close();
-	?>
-	var array = ["Volvo","Saab","Mercades","Audi"];
-	
-	var selectList = document.createElement("select");
-	selectList.setAttribute("id", "mySelect");
-	myDiv.appendChild(selectList);
-	
-	for (var i = 0; i < array.length; i++) {
-    var option = document.createElement("option");
-    option.setAttribute("value", array[i]);
-    option.text = array[i];
-    selectList.appendChild(option);
+		if ($result->num_rows > 0) {
+		while($row = $result->fetch_assoc()) {
+			$sSemester = $row["semester"];
+			echo "<h3>$sName</h3>";
+		}
+		}
+		$db_connect->close();
+		?>
+		var array = ["Volvo","Saab","Mercades","Audi"];
+		
+		var selectList = document.createElement("select");
+		selectList.setAttribute("id", "mySelect");
+		myDiv.appendChild(selectList);
+		
+		for (var i = 0; i < array.length; i++) {
+		var option = document.createElement("option");
+		option.setAttribute("value", array[i]);
+		option.text = array[i];
+		selectList.appendChild(option);
 }
 	</script>
 </body>
