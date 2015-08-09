@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>Add Subject</title>
-		<link rel="stylesheet" href="views/css/registrationStyle.css">
+		<link rel="stylesheet" href="css/registrationStyle.css">
 	</head>
 	<body>
         <div align="center">
