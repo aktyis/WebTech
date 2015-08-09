@@ -1,7 +1,6 @@
 <!Doctype html>
 <html>
 	<head>
-
 		<title>Login</title>
 		<link rel="stylesheet" href="views/css/homeStyle.css">
 	</head>
