@@ -12,7 +12,7 @@ class Home
 
   public function loginForm()
   {
-    require '/../views/loginForm.php';
+    //require '/../views/loginForm.php';
   }
 
   public function show($data)

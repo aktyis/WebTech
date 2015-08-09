@@ -29,7 +29,7 @@ class Initialize
       if(file_exists($file))
       {
 		require 'controllers/'.$url[0].'.php';
-		$controller = new Home();
+		$controller = new $url[0]();
       }
       else
       {
@@ -44,6 +44,7 @@ class Initialize
       {
         $controller->{$url[1]}();
       }
+
     }
 
   }
