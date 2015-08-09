@@ -7,7 +7,7 @@ class Home
 
   function __construct()
   {
-    echo 'we are at home...';
+    require '/../views/home_view.php';
   }
 
   public function showAll()
