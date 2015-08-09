@@ -14,6 +14,6 @@
     setcookie(session_name(), "", time() - 3600);
     session_destroy();
 
-     header("location: http://$host$uri/../html/loginForm.html" );
+     header("location: http://$host$uri/loginForm.php" );
     
 ?>

@@ -7,5 +7,5 @@ if (mysqli_connect_errno())
     exit();
 } 
 else 
-{	echo "Success";	}
+{	echo "";	}
 ?>
