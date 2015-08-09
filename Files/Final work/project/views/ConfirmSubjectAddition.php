@@ -27,7 +27,7 @@
 			if(mysqli_query($db_connect, $insert))
 			{
                 echo "Records added successfully.";
-                header("location:../index.php");
+                header("location:.././");
 			}
 			else
 			{

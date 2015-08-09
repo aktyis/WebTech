@@ -9,20 +9,20 @@
 			<div align="center" class="div2">
 				<div align="left" class="div3"><br>
 					<form action="http://google.com/search" method="get">
-					<a class="alink" id="hlink" href="views/home_view.php">Home</a>
-					<a class="alink" id="falink" href="views/home_view.php">Faculty</a>
-					<a class="alink" id="stlink" href="views/home_view.php">Student</a>
-					<a class="alink" id="adlink" href="views/home_view.php">Admission</a>
-					<a class="alink" id="oflink" href="views/home_view.php">Offices</a>
-					<a class="alink" id="relink" href="views/home_view.php">Research</a>
-					<a class="alink" id="allink" href="views/home_view.php">Alumni</a>
-					<a class="alink" id="colink" href="views/home_view.php">Contact</a>
+					<a class="alink" id="hlink" href="./">Home</a>
+					<a class="alink" id="falink" href="./">Faculty</a>
+					<a class="alink" id="stlink" href="./">Student</a>
+					<a class="alink" id="adlink" href="./">Admission</a>
+					<a class="alink" id="oflink" href="./">Offices</a>
+					<a class="alink" id="relink" href="./">Research</a>
+					<a class="alink" id="allink" href="./">Alumni</a>
+					<a class="alink" id="colink" href="index.php">Contact</a>
 					<input class="searchText" type="text" name="q" required placeholder="Search Google">
 					<input class="searchBut" type="submit" value="Search">
 					</form>
 				</div><br><br>
 				<div align="left" class="div4"><br>
-					<a class="alink" href="views/mainHome.html"><img id="imlink" src="images/univLogo.png" alt="University" title="Engineering University of Bangladesh"></a>
+					<a class="alink" href="views/mainHome.html"><img id="imlink" src="views/images/univLogo.png" alt="University" title="Engineering University of Bangladesh"></a>
 					<a class="alink" id="nalink" href="home_view.php">Engineering University of Bangladesh</a>
 					<a class="alink" id="lolink" href="loginForm.php">Login</a>
 				</div>
