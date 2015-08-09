@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>Engineering University of Bangladesh</title>
-		<link rel="stylesheet" href="css/homeStyle.css">
+		<link rel="stylesheet" href="views/css/homeStyle.css">
 	</head>
 	<body >
 		<div align="center" class="div1">
