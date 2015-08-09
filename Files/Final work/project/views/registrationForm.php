@@ -1,7 +1,7 @@
 <!Doctype html>
 <html>
 	<head>
-		<title>Registration</title>
+		<title>Add Subject</title>
 		<link rel="stylesheet" href="views/css/registrationStyle.css">
 	</head>
 	<body>
@@ -57,7 +57,7 @@
                         <td><input class="fsubmit" type="submit" value="Register"><br><br></td>
                     </tr>
                 </table>
-                    
+
             </form>
 		</div>
         </div>

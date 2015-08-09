@@ -1,0 +1,56 @@
+
+body
+{
+	background-color: black;
+
+}
+
+.fieldset1
+{
+    width:500px;
+    border: solid 1px rgb(163, 205, 234);
+    background-color:#eee;
+}
+.fieldset2
+{
+    width:500px;
+	height:380px;
+    border: solid 1px rgb(163, 205, 234);
+    background-color:#eee;
+}
+.rflegend
+{
+    font-weight:bold;
+    font-size:25px;
+    color:white;
+    text-shadow: 2px 4px 5px black;
+}
+.gurdianCol
+{
+    vertical-align: top;
+}
+.p1label
+{
+	margin-left: 2em;
+    font-weight:bold;
+
+}
+.p1text
+{
+    margin-left: 2em;
+    width:250px;
+    height:25px;
+}
+#addressArea
+{
+    width: 250px;
+    height: 75px;
+}
+.fsubmit
+{
+    color:#ff003b;
+    height:40px;
+    width: 200px;
+    font-size:20px;
+    font-weight:bold;
+}
