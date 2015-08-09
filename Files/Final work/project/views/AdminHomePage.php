@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>Employee</title>
-		<link rel="stylesheet" href="../css/homeStyle.css">
+		<link rel="stylesheet" href="css/homeStyle.css">
 	</head>
 	<body >
             <div align="center" class="div1">
@@ -33,7 +33,7 @@
                         <a class="adblink" id="bhlink" href="">Borrow History</a><br><br>
                         <label id="academic">Administrative</label><br>
                         <a class="adblink" id="aslink" href="">Student List</a><br><br>
-                        <a class="adblink" id="aslink" href="../html/registrationForm.html">Add Student</a><br><br>
+                        <a class="adblink" id="aslink" href="registrationForm.php">Add Student</a><br><br>
                         
                     </td>
                     <td style="width:700px; border:1px solid green; vertical-align: top; text-align: left; margin-left: 2em;">
