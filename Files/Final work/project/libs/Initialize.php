@@ -8,6 +8,9 @@ class Initialize
 
   function __construct()
   {
+	  require 'controllers/Home.php';
+	  new Home();
+
     if(isset($_GET['url']))//checks if any url is typed furter after index.php
     {
       $url = explode('/',$_GET['url']);//separated by '/' words
@@ -25,8 +28,9 @@ class Initialize
       $file = 'controllers/'.$url[0].'.php';
       if(file_exists($file))
       {
-      require 'controllers/'.$url[0].'.php';
-      $controller = new Home();
+		require 'controllers/'.$url[0].'.php';
+    ob_end_clean();
+		$controller = new $url[0]();
       }
       else
       {
@@ -41,6 +45,7 @@ class Initialize
       {
         $controller->{$url[1]}();
       }
+
     }
 
   }

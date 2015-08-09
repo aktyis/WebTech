@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<link rel="stylesheet" href="css/studentHomePage.css">
+	<link rel="stylesheet" href="views/css/studentHomePage.css">
 	<script>
 	var myDiv = document.getElementById("semesterSelectTag");
 	

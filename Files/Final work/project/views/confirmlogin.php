@@ -76,7 +76,11 @@ if(isset($_POST["username"]))
 		if($password != $db_pass_str)
         {
 			echo "login_failed";
+<<<<<<< HEAD
             header("location: http://failedloginForm.php" ); 
+=======
+            header("location: http://$host$uri/failedloginForm.php" ); 
+>>>>>>> origin/master
             
             exit();
 		}
@@ -100,10 +104,17 @@ if(isset($_POST["username"]))
 			echo $db_username;
             if($status=="student")
             {
+<<<<<<< HEAD
                 header("location: http://studentHomePage.php" ); 
             }
             else
                 header("location: http://AdminHomePage.php" );
+=======
+                header("location: http://$host$uri/studentHomePage.php" ); 
+            }
+            else
+                header("location: http://$host$uri/AdminHomePage.php" );
+>>>>>>> origin/master
 		    exit();
         }
 	}

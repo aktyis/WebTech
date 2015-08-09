@@ -1,9 +1,9 @@
 <!Doctype html>
 <html>
 	<head>
-        
+
 		<title>Login</title>
-		<link rel="stylesheet" href="css/homeStyle.css">
+		<link rel="stylesheet" href="views/css/homeStyle.css">
 	</head>
 	<body >
 		<div align="center">
@@ -27,10 +27,10 @@
 					<a class="alink" id="nalink" href="home_view.php">Engineering University of Bangladesh</a>
 					<a class="alink" id="lolink" href="loginForm.php">Login</a>
 				</div>
-				
+
 				<div align="right" class="div5"><br><br>
-                    
-					<form action="http://confirmlogin.php" method="POST">
+
+					<form action="views/confirmlogin.php" method="POST">
 						<div align="left" class="div6"><br>
 						<label class="loginlabel">Sign In with your username & password</label><br>
 							<div class="div7">

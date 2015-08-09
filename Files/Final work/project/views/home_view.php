@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>Engineering University of Bangladesh</title>
-		<link rel="stylesheet" href="css/homeStyle.css">
+		<link rel="stylesheet" href="views/css/homeStyle.css">
 	</head>
 	<body >
 		<div align="center" class="div1">
@@ -24,7 +24,7 @@
 				<div align="left" class="div4"><br>
 					<a class="alink" href="mainHome.html"><img id="imlink" src="images/univLogo.png" alt="University" title="Engineering University of Bangladesh"></a>
 					<a class="alink" id="nalink" href="home_view.php">Engineering University of Bangladesh</a>
-					<a class="alink" id="lolink" href="loginForm.php">Login</a>
+					<a class="alink" id="lolink" href="loginForm">Login</a>
 				</div>
 			</div>
 		</div>
