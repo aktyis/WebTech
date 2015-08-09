@@ -30,7 +30,7 @@
 
 				<div align="right" class="div5"><br><br>
 
-					<form action="http://confirmlogin.php" method="POST">
+					<form action="views/confirmlogin.php" method="POST">
 						<div align="left" class="div6"><br>
 						<label class="loginlabel">Sign In with your username & password</label><br>
 							<div class="div7">
