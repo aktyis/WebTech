@@ -1,7 +1,7 @@
 
 <?php
     
-    require './dbconnect.php';
+    require 'dbconnect.php';
     
     $host  = $_SERVER['HTTP_HOST'];
     $uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\'); // getting current location
@@ -32,7 +32,8 @@
     $insert = "INSERT INTO students(user_id, name, cantact_no, email, blood_group, current_address, gender, gurdian_name, gurdians_contact) VALUES ('$userId', '$name', '$contactNo', '$email','$bloodGroup', '$currentAddress', '$gender', '$guerdianName', '$guerdianContact')";
             if(mysqli_query($db_connect, $insert))
             {
-                header("location: http://$host$uri/../php/AdminHomePage.php" );
+				echo "Records added successfully.";
+                header("location: http://$host$uri/AdminHomePage.php" );
             } 
             else
             {

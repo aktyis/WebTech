@@ -21,19 +21,19 @@
     float:left;
     padding:10px;	 	 
 }
-#rightlink:link 
+.rightlink:link 
 {
-	color: rgb(200,200,220);
+	color: rgb(100,100,550);
 	background-color: transparent;
 	text-decoration: none;
 }
-#rightlink:visited 
+.rightlink:visited 
 {
-	color: rgb(200,200,220);
+	color: rgb(100,100,550);
 	background-color: transparent;
 	text-decoration: none;
 }
-#rightlink:hover 
+.rightlink:hover 
 {
 	color: rgb(100,280,550);
 	background-color: transparent;
@@ -60,17 +60,18 @@
 <?php
 $db_connect = mysqli_connect("localhost" , "root" , "" ,"webtechprojectdatabase");
 	
-	$get_id="13-23471-1";
+	$get_id="13-23669-1";
 	$sql= "SELECT * FROM students WHERE user_id='$get_id' ";
 	$result = $db_connect->query($sql);
 
 	if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         $sName = $row["name"];
-		echo "<h3>$sName</h3>";
-		echo "<h4>$get_id</h4>";
+		
     }
 	}
+	echo "<h3>$sName</h3>";
+		echo "<h4>$get_id</h4>";
 	$db_connect->close();
 ?>
 </div>
@@ -113,7 +114,7 @@ $db_connect = mysqli_connect("localhost" , "root" , "" ,"webtechprojectdatabase"
 		 }
 		 // Now get the value from user and pass it to
 		 // server script.
-		 var id = "13-23471-1";
+		 var id = "13-23669-1";
 		 var queryString = "?id=" + id ;
 		 ajaxRequest.open("POST", "ajax-example.php"+queryString, true);
 		 ajaxRequest.send(null); 
@@ -125,7 +126,8 @@ $db_connect = mysqli_connect("localhost" , "root" , "" ,"webtechprojectdatabase"
 <a class="rightlink" href=""><b>Profile</a></b><br>
 <a class="rightlink" href=""><b>Library</a></b><br>
 <a class="rightlink" href=""><b>Financials</a></b><br>
-
+<br>
+<a class="rightlink" href="logout.php"><b>Log Out</a></b><br>
 
 </div>
 <br>
@@ -156,7 +158,7 @@ Copyright © We Are Devolopers
 		var myDiv = document.getElementById("semesterSelectTag");
 		<? php
 		$db_connect = mysqli_connect("localhost" , "root" , "" ,"webtechprojectdatabase");
-		$get_id="13-23471-1";
+		$get_id="13-23669-1";
 		$sql= "SELECT * FROM students WHERE user_id='$get_id' ";
 		$result = $db_connect->query($sql);
 

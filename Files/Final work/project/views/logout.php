@@ -14,6 +14,10 @@
     setcookie(session_name(), "", time() - 3600);
     session_destroy();
 
+<<<<<<< HEAD
      header("location: http://$host$uri/../home_view.php" );
+=======
+     header("location: http://$host$uri/loginForm.php" );
+>>>>>>> origin/master
     
 ?>
