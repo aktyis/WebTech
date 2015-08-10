@@ -60,17 +60,18 @@
 <?php
 $db_connect = mysqli_connect("localhost" , "root" , "" ,"webtechprojectdatabase");
 	
-	$get_id="13-23471-1";
+	$get_id="13-23669-1";
 	$sql= "SELECT * FROM students WHERE user_id='$get_id' ";
 	$result = $db_connect->query($sql);
 
 	if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         $sName = $row["name"];
-		echo "<h3>$sName</h3>";
-		echo "<h4>$get_id</h4>";
+		
     }
 	}
+	echo "<h3>$sName</h3>";
+		echo "<h4>$get_id</h4>";
 	$db_connect->close();
 ?>
 </div>
@@ -113,7 +114,7 @@ $db_connect = mysqli_connect("localhost" , "root" , "" ,"webtechprojectdatabase"
 		 }
 		 // Now get the value from user and pass it to
 		 // server script.
-		 var id = "13-23471-1";
+		 var id = "13-23669-1";
 		 var queryString = "?id=" + id ;
 		 ajaxRequest.open("POST", "ajax-example.php"+queryString, true);
 		 ajaxRequest.send(null); 
@@ -157,7 +158,7 @@ Copyright © We Are Devolopers
 		var myDiv = document.getElementById("semesterSelectTag");
 		<? php
 		$db_connect = mysqli_connect("localhost" , "root" , "" ,"webtechprojectdatabase");
-		$get_id="13-23471-1";
+		$get_id="13-23669-1";
 		$sql= "SELECT * FROM students WHERE user_id='$get_id' ";
 		$result = $db_connect->query($sql);
 
