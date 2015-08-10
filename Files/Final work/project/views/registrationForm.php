@@ -7,11 +7,8 @@
 	<body>
         <div align="center">
 		<div align="center" class="div1">
-<<<<<<< HEAD
-			<form action="views/ConfirmRegistration.php" method="post">                   <br>
-=======
 			<form action="ConfirmRegistration.php" method="post">                   <br>
->>>>>>> origin/master
+
                 <table>
                     <tr>
                         <td>

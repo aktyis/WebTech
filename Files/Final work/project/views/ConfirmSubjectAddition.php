@@ -29,7 +29,7 @@
 			if(mysqli_query($db_connect, $insert))
 			{
                 echo "Records added successfully.";
-               header("location: http://$host$uri/../AdminHomePage.php" );
+               header("location: ./AdminHomePage.php" );
 			}
 			else
 			{

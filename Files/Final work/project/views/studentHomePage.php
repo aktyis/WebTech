@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <style>
 #header{
     background-color:#380000;
@@ -77,9 +78,31 @@ $db_connect = mysqli_connect("localhost" , "root" , "" ,"webtechprojectdatabase"
 </div>
 </div>
 
+
+
+<div id="nav">
+<a class="rightlink" href=""><b>Courses & Results</b></a><br>
+<a class="rightlink" href=""><b>Profile</a></b><br>
+<a class="rightlink" href=""><b>Library</a></b><br>
+<a class="rightlink" href=""><b>Financials</a></b><br>
+<br>
+<a class="rightlink" href="logout.php"><b>Log Out</a></b><br>
+
+</div>
+<br>
+<div id="regButton">
+<input onclick="ajaxFunction()" type=submit value="Pre-Registration" style="height:40px; background-color:#00FFFF; 	font: italic bold 12px/30px Georgia, serif;
+">
+</div>
+<div id="section">
+	<div class="semesterDropDownList" id="semesterSelectTag"></div>
+<h2></h2>
+<p>
+<form onsubmit="ajaxFunction(); return false;">
 <script>
 	function ajaxFunction()
 	{
+		document.getElementById('ajaxDiv').innerHTML="ami";
 		 var ajaxRequest;  // The variable that makes Ajax possible!
 		 try
 		 {
@@ -108,8 +131,7 @@ $db_connect = mysqli_connect("localhost" , "root" , "" ,"webtechprojectdatabase"
 		 {
 		   if(ajaxRequest.readyState == 4)
 		   {
-			  var ajaxDisplay = document.getElementById('ajaxDiv');
-			  ajaxDisplay.innerHTML = ajaxRequest.responseText;
+			  document.getElementById('ajaxDiv').innerHTML = ajaxRequest.responseText;
 			}
 		 }
 		 // Now get the value from user and pass it to
@@ -121,26 +143,10 @@ $db_connect = mysqli_connect("localhost" , "root" , "" ,"webtechprojectdatabase"
 }
 </script>
 
-<div id="nav">
-<a class="rightlink" href=""><b>Courses & Results</b></a><br>
-<a class="rightlink" href=""><b>Profile</a></b><br>
-<a class="rightlink" href=""><b>Library</a></b><br>
-<a class="rightlink" href=""><b>Financials</a></b><br>
-<br>
-<a class="rightlink" href="logout.php"><b>Log Out</a></b><br>
-
-</div>
-<br>
-<div id="regButton">
-<input type=submit value="Pre-Registration" style="height:40px; background-color:#00FFFF; 	font: italic bold 12px/30px Georgia, serif;
-">
-</div>
-<div id="section">
-	<div class="semesterDropDownList" id="semesterSelectTag"></div>
-<h2></h2>
-<p>
-<input type=submit onclick="ajaxFunction()" value="showroutine" ">
-<div class="ajaxDiv" id="ajaxDiv"></div>
+      <input type=submit value="Show Info" ">
+	<div class="ajaxDiv" id="ajaxDiv"></div>
+	
+ </form>
 
 </p>
 <p>

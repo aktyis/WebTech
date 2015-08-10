@@ -8,7 +8,9 @@ class Initialize
 
   function __construct()
   {
-	  require 'controllers/Home.php';
+	  require 'controllers/Home.php';
+	  
+	  
 	  new Home();
 
     if(isset($_GET['url']))//checks if any url is typed furter after index.php
@@ -47,9 +49,7 @@ class Initialize
 			$controller = new $url[1]();
 		  }
 		  //else	throw new Exception($file.' file donot exits');
-      }
-
-      
+      }     
 
     }
 
