@@ -5,7 +5,7 @@ class AddSubject
 {
   function __construct()
   {
-    require '/../views/addSubject.php';
+    require '/../addSubject.php';
   }
 }
 

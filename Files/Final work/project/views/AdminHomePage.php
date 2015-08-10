@@ -34,6 +34,7 @@
                         <label id="academic">Administrative</label><br>
                         <a class="adblink" id="aslink" href="">Student List</a><br><br>
                         <a class="adblink" id="aslink" href="registrationForm.php">Add Student</a><br><br>
+						 <a class="adblink" id="aslink" href="addSubject.php">Add Subject</a><br><br>
                         
                     </td>
                     <td style="width:700px; border:1px solid green; vertical-align: top; text-align: left; margin-left: 2em;">

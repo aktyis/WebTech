@@ -34,17 +34,22 @@ class Initialize
       }
       else
       {
-        throw new Exception($file.' file donot exits');
+		  if(isset($url[1])&&isset($url[2]))
+		  {
+			require 'controllers/'.$url[1].'.php';
+			ob_end_clean();
+			$controller = new $url[1]();
+		  }
+		  else if(isset($url[1]))
+		  {
+			require 'controllers/'.$url[1];
+			ob_end_clean();
+			$controller = new $url[1]();
+		  }
+		  //else	throw new Exception($file.' file donot exits');
       }
 
-      if(isset($url[1])&&isset($url[2]))
-      {
-        $controller->{$url[1]}($url[2]);
-      }
-      else if(isset($url[1]))
-      {
-        $controller->{$url[1]}();
-      }
+      
 
     }
 

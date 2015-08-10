@@ -7,7 +7,7 @@
 	<body>
         <div align="center">
 		<div align="center" class="div1">
-			<form action="views/ConfirmSubjectAddition.php" method="post">                   <br>
+			<form action="ConfirmSubjectAddition.php" method="post">                   <br>
                 <table>
                     <tr>
                         <td>
