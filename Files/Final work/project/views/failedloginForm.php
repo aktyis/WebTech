@@ -3,7 +3,7 @@
 	<head>
         
 		<title>Login</title>
-		<link rel="stylesheet" href="views/css/homeStyle.css">
+		<link rel="stylesheet" href="css/homeStyle.css">
 	</head>
 	<body >
 		<div align="center">
@@ -23,13 +23,14 @@
 					</form>
 				</div><br><br>
 				<div align="left" class="div4"><br>
-					<a class="alink" href="mainHome.html"><img id="imlink" src="images/univLogo.png" alt="University" title="Engineering University of Bangladesh"></a>
+					<a class="alink" href="mainHome.html"><img id="imlink"
+					src="images/univLogo.png" alt="University" title="Engineering University of Bangladesh"></a>
 					<a class="alink" id="nalink" href="home_view.php">Engineering University of Bangladesh</a>
 					<a class="alink" id="lolink" href="loginForm.php">Login</a>
 				</div>
 				<div align="right" class="div5"><br><br>
                     
-					<form action="views/confirmlogin.php" method="POST">
+					<form action="confirmlogin.php" method="POST">
 						<div align="left" class="div6"><br>
 						<label class="loginlabel">Wrong Sign In Try again</label><br>
 							<div class="div7">
