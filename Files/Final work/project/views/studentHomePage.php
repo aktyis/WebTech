@@ -21,19 +21,19 @@
     float:left;
     padding:10px;	 	 
 }
-#rightlink:link 
+.rightlink:link 
 {
-	color: rgb(200,200,220);
+	color: rgb(100,100,550);
 	background-color: transparent;
 	text-decoration: none;
 }
-#rightlink:visited 
+.rightlink:visited 
 {
-	color: rgb(200,200,220);
+	color: rgb(100,100,550);
 	background-color: transparent;
 	text-decoration: none;
 }
-#rightlink:hover 
+.rightlink:hover 
 {
 	color: rgb(100,280,550);
 	background-color: transparent;
@@ -125,7 +125,8 @@ $db_connect = mysqli_connect("localhost" , "root" , "" ,"webtechprojectdatabase"
 <a class="rightlink" href=""><b>Profile</a></b><br>
 <a class="rightlink" href=""><b>Library</a></b><br>
 <a class="rightlink" href=""><b>Financials</a></b><br>
-
+<br>
+<a class="rightlink" href="logout.php"><b>Log Out</a></b><br>
 
 </div>
 <br>
