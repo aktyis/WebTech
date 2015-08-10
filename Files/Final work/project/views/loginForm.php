@@ -1,6 +1,14 @@
 <!Doctype html>
 <html>
 	<head>
+<script type ="text/javascript">
+	function MyFunction()
+	{
+		var yourMail = window.prompt("Please enter Email here \n", "");
+		window.alert("A link is sent to your mail " + yourMail);
+	}
+
+</script>
 		<title>Login</title>
 		<link rel="stylesheet" href="views/css/homeStyle.css">
 	</head>
@@ -38,7 +46,7 @@
 									<input class="ltext" type="text" name="username" autofocus required ><br><br>
 									<label class="llabel" >Password:</label><br><br>
 									<input class="ltext" type="password" name="password" required><br><br>
-									<a class="alink" id="fplink" href="views/js/forgetPass.js">Forgot Password?</a>
+									<a class="alink" id="fplink" href="" onclick="MyFunction();return false;">Forgot Password?</a>
 								</p>
 								<input class="signBut" type="submit" value="Sign In" onsubmit="formValidate.validateField('signIn')">
 							</div>
